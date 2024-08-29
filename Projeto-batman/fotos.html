@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos - Projeto Batman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+          background-color: aliceblue;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Galeria de Fotos</h1>
+            <p>Confira algumas imagens incríveis do nosso projeto!</p>
+        </div>
+        <div class="gallery">
+            <img src="./img/batman1.jfif" alt="Batman">
+            <img src="./img/gordo.jfif" alt="Imagem 2">
+            <img src="./img/nemr3.jfif" alt="Imagem 3">
+            <img src="./img/agato1.jfif" alt="Imagem 4">
+            <img src="./img/nume2.jfif" alt="Imagem 5">
+            <img src="./img/nume1.jfif" alt="Imagem 6">
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+    </div>
+</body>
+</html>

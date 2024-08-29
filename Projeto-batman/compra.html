@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Ingressos</title>
+    <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Compra de Ingressos</h1>
+        <form id="ticketForm">
+            <fieldset>
+                <legend>Escolha o Tipo de Ingresso</legend>
+                <label for="standard">Ingresso Padrão - R$50</label>
+                <input type="radio" id="standard" name="ticketType" value="50" checked>
+                <label for="vip">Ingresso VIP - R$100</label>
+                <input type="radio" id="vip" name="ticketType" value="100">
+            </fieldset>
+
+            <fieldset>
+                <legend>Quantidade</legend>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações de Contato</legend>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <div id="summary">
+                <h2>Resumo da Compra</h2>
+                <p>Tipo de Ingresso: <span id="ticketTypeSummary">Padrão</span></p>
+                <p>Quantidade: <span id="quantitySummary">1</span></p>
+                <p>Valor Total: R$<span id="totalAmount">50</span></p>
+            </div>
+
+            <button type="submit">Comprar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
